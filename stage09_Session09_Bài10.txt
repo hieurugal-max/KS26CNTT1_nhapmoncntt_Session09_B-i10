@@ -1,0 +1,41 @@
+Phần 1: Phân tích và đề xuất
+1. Phân tích yêu cầu
+- Đầu vào: Sinh viên năm nhất chưa biết lập trình, muốn hiểu khái niệm Markdown Parser.
+- Đầu ra: AI giải thích đơn giản, đúng trình độ, có ví dụ và đáp ứng yêu cầu về độ dài.
+2. Ưu điểm và nhược điểm
+Chiến lược A – Văn xuôi
+- Ưu điểm: Ngắn gọn, dễ viết, tiết kiệm token.
+- Nhược điểm: Yêu cầu chưa rõ ràng, khó kiểm soát nội dung trả lời.
+Chiến lược B – Markdown 3 phần
+- Ưu điểm: Yêu cầu rõ ràng, dễ kiểm soát câu trả lời, dễ tái sử dụng.
+- Nhược điểm: Tốn token hơn, cần biết cách chia mục.
+Phần 2: So sánh và lựa chọn
+3. Bảng so sánh
+Tiêu chí	Chiến lược A	Chiến lược B
+Độ chính xác	Khá	Cao
+Tiêu thụ Token	Ít	Nhiều hơn
+Khả năng tái sử dụng	Thấp	Cao
+Dễ học cho người mới	Rất dễ	Cần làm quen
+4. Lựa chọn
+- Chiến lược A: Dùng khi hỏi nhanh, câu hỏi đơn giản, không cần yêu cầu chi tiết.
+- Chiến lược B: Dùng khi ôn thi, cần ví dụ, giới hạn độ dài và muốn tái sử dụng prompt.
+Nên chọn chiến lược B khi học tập có yêu cầu cụ thể vì giúp AI trả lời đúng trọng tâm hơn.
+Phần 3: Thiết kế và triển khai
+5. Prompt mẫu giải thích Token
+Bối cảnh
+Tôi là sinh viên năm 1 PTIT, chưa có nền tảng lập trình.
+Khái niệm cần giải thích
+Token trong AI.
+Yêu cầu
+- Dùng ngôn ngữ đơn giản, dễ hiểu.
+- Giải thích trong khoảng 100–150 từ.
+- Cho một ví dụ cụ thể.
+Không cần
+- Thuật ngữ kỹ thuật phức tạp.
+- Ví dụ code lập trình.
+
+
+
+6. Trả lời hai bẫy dữ liệu
+Bẫy 1: Nếu đặt yêu cầu độ dài trong phần Bối cảnh, AI vẫn có thể hiểu nhưng dễ nhầm lẫn hoặc bỏ sót yêu cầu. Cần đặt thông tin đúng phần để prompt rõ ràng.
+Bẫy 2: Nên dùng chiến lược A khi hỏi câu đơn giản, cần trả lời nhanh và không có nhiều yêu cầu ràng buộc. Chiến lược A tiết kiệm token và dễ viết hơn chiến lược B.
